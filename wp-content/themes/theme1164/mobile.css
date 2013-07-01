@@ -1,0 +1,81 @@
+/* mobile */
+
+@media only screen and (max-width: 1023px) {
+
+	p {
+
+		font-size: 24px;
+		line-height: 36px;
+
+	}
+
+
+	h1 {
+
+		font-size:36px;
+
+	}
+
+	h2 {
+
+		font-size: 32px;
+	}
+
+	h3 {
+
+		font-size: 28px;
+	}
+
+	h4 {
+
+		font-size: 24px;
+	}
+
+	#main .lft_contactus {
+		float: none;
+
+	}
+
+	#main .lft_contactus input, #main .lft_contactus select, #main .lft_contactus textarea {
+
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size:22px;
+		width: 635px;
+
+	}
+
+	#main .lft_contactus label {
+
+		font-size: 22px;
+
+	}
+
+	/*
+
+	nav.primary {
+		background: #333;
+		margin: 40px 0px;
+		padding: 20px 0px;
+		top: 100px;
+
+	}
+
+	.sf-menu li {
+
+		margin-right: 15px;
+		font-size:	20px;
+
+	}
+
+	#wrapper {
+
+		top: 40px;
+		position:relative;
+
+	}
+
+	*/
+
+
+}
