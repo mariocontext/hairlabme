@@ -1,0 +1,140 @@
+/*
+Theme Name:     HL Foxy Child
+Theme URI:      http://contextmultimedia.com/
+Description:    Extended Child theme for the Foxy theme 
+Author:         Mario Noble
+Author URI:     http://contextmultimedia.com/
+Template:       Foxy
+Version:        0.1.0
+*/
+/* This child theme is based off the Foxy Theme. http://www.elegantthemes.com/gallery/foxy/
+. 
+
+The scss files are located one directory below in the source_stylesheets folder. We use the Scout app to compile for OSX and Windows PC.
+
+To learn how to use SASS visit: http://sass-lang.com/
+
+*/
+@import url("../Foxy/style.css");
+
+/* small general ie fixes */
+
+.ie8 .ngg-gallery-thumbnail img {
+  max-width: inherit;
+}
+
+
+/* apply styling to elements under 600px in device width */
+@media screen and (max-width: 599px) {
+
+
+  /* contact form 7 tweaks - comment out if you do not use this plugin */
+  /* styles form elements to stretch across entire space as opposed to breaking out of display area */
+
+  .wpcf7-form-control {
+    width: 100% !important;
+  }
+
+  .wpcf7-form-control.wpcf7-submit {
+    font-size: 18px;
+    font-size: 1.286rem;
+    padding: 14px 0;
+    padding:  1rem 0;
+  }
+
+
+  .wpcf7-form-control.wpcf7-captchac {
+    width: 72px !important;
+    /* causes image not to stretch */
+  }
+}
+/* apply styling to elements 600px and over in device width */
+@media screen and (min-width: 600px) {
+
+
+  /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container */
+  /* line 127, source_stylesheets/style.scss */
+  #content .fluid-width-video-wrapper {
+    width: 480px;
+    height: 320px;
+    padding-top: 0px !important;
+  }
+
+  #colophon {
+    /* adds more clickable space */
+  }
+
+  #colophon .icon-caret-up, #colophon .icon-sitemap {
+    display: none;
+  }
+
+  #colophon .general-button {
+    margin: 20px 0px;
+    margin:  1.429rem 0px;
+  }
+}
+/* default table styling in primary page area. applies to all tables. may be too greedy and you may want to limit it by changing the css and the invoking function in scripts.js to only target a table with a specific class if there are too many conflicts with plugins that use tables in this area */
+
+.stacktable {
+  width: 100%;
+}
+
+
+.st-head-row {
+  padding-top: 1em;
+}
+
+
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+
+.st-key {
+  text-align: left;
+  padding-right: 1%;
+}
+
+
+.st-val {
+  padding-left: 1%;
+}
+
+
+#primary table {
+  display: none;
+}
+
+
+#primary .stacktable.small-only {
+  display: table;
+}
+
+.lt-ie8 #primary table {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+
+  #primary table {
+    display: table;
+  }
+
+
+  #primary table.stacktable.small-only {
+    display: none;
+  }
+
+
+  .st-key {
+    width: 49%;
+    text-align: right;
+    padding-right: 1%;
+  }
+
+  .st-val {
+    width: 49%;
+    padding-left: 1%;
+  }
+}

@@ -1,0 +1,209 @@
+/*
+Theme Name:     Twenty Twelve Child
+Theme URI:      http://contextmultimedia.com/2012_redux
+Description:    Extended Child theme for the Twenty Twelve theme 
+Author:         Mario Noble
+Author URI:     http://contextmultimedia.com/
+Template:       twentytwelve
+Version:        0.1.0
+*/
+/* This child theme is based off the Wordpress Twenty Twelve Theme. We use the original sass/scss preprocessor variables and mixins and highly recommend installing SASS/Compass to compile your css. This will enable your styling and formatting to be consistent with the original 2012 theme and avoid conflicts and inconsistencies. It will also make your life easier in the long run when using various browser prefixs, generating gradients and making quick updates to colors and various other elements by changing variables in one place. 
+
+The scss files are located one directory below in the source_stylesheets folder. We use the Scout app to compile for OSX and Windows PC.
+
+To learn how to use SASS visit: http://sass-lang.com/
+
+*/
+@import url("../twentytwelve/style.css");
+/* line 46, source_stylesheets/_preboot.scss */
+.clear {
+  zoom: 1;
+}
+/* line 38, source_stylesheets/_preboot.scss */
+.clear:before, .clear:after {
+  display: table;
+  content: "";
+}
+/* line 42, source_stylesheets/_preboot.scss */
+.clear:after {
+  clear: both;
+}
+
+/* wordpress default tweaks */
+/* line 31, source_stylesheets/style.scss */
+.wordpress-credits {
+  display: block;
+  padding: 14px 0;
+  padding:  1rem 0;
+}
+
+/* small general ie fixes */
+/* line 38, source_stylesheets/style.scss */
+.ie8 .ngg-gallery-thumbnail img {
+  max-width: inherit;
+}
+
+/* make buttons larger in general */
+/* line 46, source_stylesheets/style.scss */
+#primary button, #primary input[type="submit"], #primary input[type="button"], #primary input[type="reset"] {
+  padding: 5px 5px;
+  padding:  0.357rem 0.357rem;
+  font-size: 20px;
+  font-size: 1.429rem;
+}
+
+/* apply styling to elements under 600px in device width */
+@media screen and (max-width: 599px) {
+  /* line 56, source_stylesheets/style.scss */
+  .main-navigation ul.nav-menu.toggled-on, .menu-toggle {
+    font-size: 20px;
+    font-size: 1.429rem;
+    padding: 12px 0;
+    padding:  0.857rem 0;
+    width: 100%;
+    display: block;
+  }
+
+  /* line 66, source_stylesheets/style.scss */
+  .main-navigation a, .general-button a {
+    background: none repeat scroll 0 0 #EFEFEF;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-size: 1.286rem;
+    padding: 14px 0;
+    padding:  1rem 0;
+    margin: 5px 0 0 0;
+    margin:  0.357rem 0 0 0;
+    text-decoration: none;
+    text-align: center;
+  }
+  /* line 77, source_stylesheets/style.scss */
+  .main-navigation .icon-reorder, .main-navigation .icon-caret-up, .main-navigation .icon-sitemap, .general-button .icon-reorder, .general-button .icon-caret-up, .general-button .icon-sitemap {
+    float: right;
+    position: relative;
+    right: 1em;
+  }
+  /* line 84, source_stylesheets/style.scss */
+  .main-navigation .sub-menu, .general-button .sub-menu {
+    padding: 0 0 0 14px;
+    padding:  0 0 0 1rem;
+  }
+
+  /* contact form 7 tweaks - comment out if you do not use this plugin */
+  /* styles form elements to stretch across entire space as opposed to breaking out of display area */
+  /* line 95, source_stylesheets/style.scss */
+  .wpcf7-form-control {
+    width: 100% !important;
+  }
+
+  /* line 101, source_stylesheets/style.scss */
+  .wpcf7-form-control.wpcf7-submit {
+    font-size: 18px;
+    font-size: 1.286rem;
+    padding: 14px 0;
+    padding:  1rem 0;
+  }
+
+  /* line 108, source_stylesheets/style.scss */
+  .wpcf7-form-control.wpcf7-captchac {
+    width: 72px !important;
+    /* causes image not to stretch */
+  }
+}
+/* apply styling to elements 600px and over in device width */
+@media screen and (min-width: 600px) {
+  /* line 119, source_stylesheets/style.scss */
+  .main-navigation .menu-toggle {
+    display: none;
+  }
+
+  /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container */
+  /* line 127, source_stylesheets/style.scss */
+  #content .fluid-width-video-wrapper {
+    width: 480px;
+    height: 320px;
+    padding-top: 0px !important;
+  }
+
+  /* line 135, source_stylesheets/style.scss */
+  #colophon {
+    /* adds more clickable space */
+  }
+  /* line 137, source_stylesheets/style.scss */
+  #colophon .icon-caret-up, #colophon .icon-sitemap {
+    display: none;
+  }
+  /* line 146, source_stylesheets/style.scss */
+  #colophon .general-button {
+    margin: 20px 0px;
+    margin:  1.429rem 0px;
+  }
+}
+/* default table styling in primary page area. applies to all tables. may be too greedy and you may want to limit it by changing the css and the invoking function in scripts.js to only target a table with a specific class if there are too many conflicts with plugins that use tables in this area */
+/* line 158, source_stylesheets/style.scss */
+.stacktable {
+  width: 100%;
+}
+
+/* line 159, source_stylesheets/style.scss */
+.st-head-row {
+  padding-top: 1em;
+}
+
+/* line 160, source_stylesheets/style.scss */
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+/* line 161, source_stylesheets/style.scss */
+.st-key {
+  text-align: left;
+  padding-right: 1%;
+}
+
+/* line 162, source_stylesheets/style.scss */
+.st-val {
+  padding-left: 1%;
+}
+
+/* line 163, source_stylesheets/style.scss */
+#primary table {
+  display: none;
+}
+
+/* line 164, source_stylesheets/style.scss */
+#primary .stacktable.small-only {
+  display: table;
+}
+
+/* line 165, source_stylesheets/style.scss */
+.lt-ie8 #primary table {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  /* line 169, source_stylesheets/style.scss */
+  #primary table {
+    display: table;
+  }
+
+  /* line 170, source_stylesheets/style.scss */
+  #primary table.stacktable.small-only {
+    display: none;
+  }
+
+  /* line 171, source_stylesheets/style.scss */
+  .st-key {
+    width: 49%;
+    text-align: right;
+    padding-right: 1%;
+  }
+
+  /* line 172, source_stylesheets/style.scss */
+  .st-val {
+    width: 49%;
+    padding-left: 1%;
+  }
+}
