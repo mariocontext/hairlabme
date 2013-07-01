@@ -39,6 +39,19 @@
 
 	}
 
+	header * {
+
+		float:none !important;
+		display: block !important;
+
+	}
+
+	.container {
+
+		width: 100%;
+
+	}
+
 	#page-content img {
 		
 		float:none;
