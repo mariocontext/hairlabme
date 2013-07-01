@@ -1,6 +1,6 @@
 /* mobile */
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 640px) {
 
 	p {
 
@@ -31,6 +31,20 @@
 		font-size: 24px;
 	}
 
+	img {
+
+		max-width:100% !important;
+    	height:auto;
+   		display: block;
+
+	}
+
+	#page-content img {
+		
+		float:none;
+	
+	}
+
 	#main .lft_contactus {
 		float: none;
 
@@ -48,6 +62,12 @@
 	#main .lft_contactus label {
 
 		font-size: 22px;
+
+	}
+
+	.small-screen-hider {
+
+		display:none;
 
 	}
 
