@@ -34,7 +34,7 @@
 				?>
 				</div> <!-- #social-icons -->
 
-				<div id="basic-copyright">Hairlab.net © 2013</div>
+				<!-- div id="basic-copyright">Hairlab.net © 2013</div -->
 
 			</div> <!-- #footer-bottom -->
 		</div> <!-- .container -->
