@@ -117,6 +117,20 @@ To learn how to use SASS visit: http://sass-lang.com/
 
 @media screen and (min-width: 800px) {
 
+  #slogan {
+
+    display: block;
+    clear: both;
+
+  }
+
+  #secondary-header-info {
+
+    width: 200px;
+    float: right;
+
+  }
+
   #primary table {
     display: table;
   }
@@ -125,6 +139,7 @@ To learn how to use SASS visit: http://sass-lang.com/
   #primary table.stacktable.small-only {
     display: none;
   }
+
 
 
   .st-key {
