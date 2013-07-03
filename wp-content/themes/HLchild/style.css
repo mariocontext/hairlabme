@@ -27,7 +27,15 @@ body {
 
 }
 
-a { color: #ff7100; }
+header #slogan {
+
+  font-size: 14px;
+  font-style: normal;
+  color: #399;
+
+}
+
+#content a, #lang_sel_footer { color: #ff7100 !important; }
 
 h1 { padding: 14px 0px;}
 
@@ -35,6 +43,12 @@ h2, h3, h4, h5, h6 {
   padding: 20px 0px;
   color: #066;
   }
+
+#top-navigation a { color: #FFF !important;}
+#menu-custom_menu > li:first-child > a:first-child { padding-left: 8px; }
+#menu-custom_menu, #menu-custom_menu ul li { background-color: #333;}
+.nav li ul {border: none; }
+
 
 #body-area {
 background: url(images/splash.png) no-repeat 50% 0;
@@ -63,12 +77,33 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
     box-shadow: none;
 }
 
+#footer-bottom { background-color: #595959; }
+#footer-bottom li a { color: #FFF; }
+
+#footer-bottom-area a { color: #ff7100; }
+
+#footer-bottom-area { 
+
+  color: #FFF;
+  font-size: 10px;
+  padding: 10px 0px;
+}
+
 #basic-copyright { text-align: right; }
+
 
 /* small general ie fixes */
 
 .ie8 .ngg-gallery-thumbnail img {
   max-width: inherit;
+}
+
+@media screen and (max-width: 479px) {
+
+
+  /* override of Foxy */
+  .post-heading h1, h1#comments, #reply-title, h1.category-title { font-size: 30px;}
+
 }
 
 
@@ -164,6 +199,8 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 }
 
 @media screen and (min-width: 800px) {
+
+  #body-area { padding-top: 40px; }
 
   #slogan {
 

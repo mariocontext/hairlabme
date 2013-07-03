@@ -12,14 +12,49 @@
 
 			wp_register_script('myfitvids', $my_child_path.'/js/jquery.fitvids.js', array('jquery'), '1.0', true);
 
+			//wp_register_script('faded', $my_child_path.'/js/jquery.faded.js', array('jquery'), '0.3.2', true);
+
+
 			wp_register_script('myscripts', $my_child_path.'/js/scripts.js', array('jquery'), '1.2', true);
 
 			wp_enqueue_script('mymodernizr');
 			//wp_enqueue_script('myhelper');
 			//wp_enqueue_script('mystacktable');
 			wp_enqueue_script('myfitvids');
+			//wp_enqueue_script('faded');
 			wp_enqueue_script('myscripts', 10);
 
 		}
 
 add_action('wp_enqueue_scripts', 'load_my_scripts');
+
+/* Slider from theme1164 */
+
+function my_post_type_slider() {
+	register_post_type( 'slider',
+                array( 
+				'label' => __('Slider'), 
+				'public' => true, 
+				'show_ui' => true,
+				'show_in_nav_menus' => false,
+				'menu_position' => 5,
+				'supports' => array(
+						'title',
+						'custom-fields',
+            'thumbnail')
+					) 
+				);
+}
+
+add_action('init', 'my_post_type_slider');
+
+/* customized functions and filters for hairlab- mario@contextmultimedia.com */
+/* removes automatic insertion of explicit height and widths for images so that the image can be scaled using css for responsive design */
+
+	add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+	add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+	function remove_width_attribute( $html ) {
+	$html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+	return $html;
+	}

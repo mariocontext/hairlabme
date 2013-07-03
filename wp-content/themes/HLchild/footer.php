@@ -42,7 +42,8 @@
 
 	<div id="footer-bottom-area" class="container">
 
-		<p id="copyright"><?php printf( __( 'HAIRLAB® and the HAIRLAB logo are part of a family of trademarks of %1$s, Inc. Trademarks and URL are licensed by Dr. Ron Chao. United Global Media Group, Inc. and its affiliates are not a professional medical corporation nor engage in the field of practicing medicine. V4', 'Foxy' ), '<a href="http://www.ugmedia.com" title="United Global Media Group">United Global Media Group, Inc.</a>'); ?></p>
+		<p> <?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?>
+			<?php printf( __( ' HAIRLAB® and the HAIRLAB logo are part of a family of trademarks of %1$s, Inc. Trademarks and URL are licensed by Dr. Ron Chao. United Global Media Group, Inc. and its affiliates are not a professional medical corporation nor engage in the field of practicing medicine. V4', 'Foxy' ), '<a href="http://www.ugmedia.com" title="United Global Media Group">United Global Media Group, Inc.</a>'); ?></p>
 
 	</div>
 

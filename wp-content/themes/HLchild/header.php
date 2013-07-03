@@ -73,5 +73,27 @@
 				?>
 				</nav>
 
+				<?php if( is_front_page() || is_home() ) { ?>
+
+					<section id="slider">
+
+						<div class="slide-container">
+
+							<!-- going to use Foxy slider in place of old legacy theme1164 -->
+
+						</div>
+
+					</section><!--#slider-->
+
+					<?php } else { ?>
+
+						<div class="other_slider">
+
+						<div class="slide-container"><?php if(function_exists('show_media_header')){ show_media_header(); } ?></div>
+
+						</div>
+
+				<?php } ?>
+
 				<?php do_action( 'et_header_top' ); ?>
 			</header> <!-- #main-header -->

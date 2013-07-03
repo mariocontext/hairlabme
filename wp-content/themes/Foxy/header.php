@@ -63,5 +63,29 @@
 				?>
 				</nav>
 
+				<?php if( is_front_page() || is_home() ) { ?>
+
+				<!-- slider added to Foxy/HLchild from original theme1164 -->
+
+			    <section id="slider">
+
+			      <div class="container">
+
+			        <?php include_once(TEMPLATEPATH . '/slider.php'); ?>
+
+			      </div>
+
+			    </section><!--#slider-->
+
+			    <?php } else { ?>
+
+			        <div class="other_slider">
+
+			        	<div class="container"><?php if(function_exists('show_media_header')){ show_media_header(); } ?></div>
+
+			        </div>
+
+			    <?php } ?>
+
 				<?php do_action( 'et_header_top' ); ?>
 			</header> <!-- #main-header -->
