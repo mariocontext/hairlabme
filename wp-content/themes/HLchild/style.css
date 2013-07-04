@@ -17,7 +17,9 @@ To learn how to use SASS visit: http://sass-lang.com/
 */
 @import url("../Foxy/style.css");
 
-/* overall styling overrides for all layouts */
+/* general overall custom child styling overrides for all layouts */
+
+/* tags */
 
 body {
 
@@ -27,15 +29,6 @@ body {
 
 }
 
-header #slogan {
-
-  font-size: 14px;
-  font-style: normal;
-  color: #399;
-
-}
-
-#content a, #lang_sel_footer { color: #ff7100 !important; }
 
 h1 { padding: 14px 0px;}
 
@@ -44,11 +37,60 @@ h2, h3, h4, h5, h6 {
   color: #066;
   }
 
+/* header styles */
+
+header #slogan {
+
+  font-size: 14px;
+  font-style: normal;
+  color: #399;
+  padding-top: 5px;
+
+}
+
+header #lang_sel {
+  
+  float:right;
+
+}
+
+header .contact_no {
+  clear:both;
+  font-size: 20px;
+  color: #666;
+  line-height: 21px;
+  text-align: right;
+  font-weight: 400;
+  background: url(images/site-image/contact_img.gif) no-repeat right 62px;
+}
+
+header .contact_no span {
+font-size: 30px;
+font-weight: 400;
+color: #333;
+line-height: 50px;
+padding-top: 2px;
+
+
+}
+
+header .contact_no span a {
+  color: #333;
+}
+
+
+#content a, #lang_sel_footer { color: #ff7100 !important; }
+
+/* navigation */
+
 #top-navigation a { color: #FFF !important;}
-#menu-custom_menu > li:first-child > a:first-child { padding-left: 8px; }
-#menu-custom_menu, #menu-custom_menu ul li { background-color: #333;}
+#menu-custom_menu > li:first-child > a:first-child, #menu-custom_menu_es > li:first-child > a:first-child { padding-left: 8px; }
+#menu-custom_menu, #menu-custom_menu ul li, #menu-custom_menu_es, #menu-custom_menu_es ul li { background-color: #333;}
 .nav li ul {border: none; }
 
+span.menu_slide, span.main_text { padding: 14px 14px; }
+
+/* content */
 
 #body-area {
 background: url(images/splash.png) no-repeat 50% 0;
@@ -61,26 +103,146 @@ background: url(images/splash.png) no-repeat 50% 0;
 
 }
 
-span.menu_slide, span.main_text { padding: 14px 14px; }
+/* sidebar */
+
+#sidebar h2, h3, h4 {
+
+  padding: 25px 0px;
+
+}
+
+#sidebar .sidebar-header{
+
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+
+}
+
+#sidebar .widget {
+
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+  padding: 10px;
+
+}
 
 #sidebar .widget ul li {
-    background: none;
-    list-style: square outside square;
     border-bottom: none;
     display: block;
     padding: 16px 30px 16px 62px !important;
     transition: none;
 }
 
+#sidebar .widget ul li:hover {
+
+    background: url(images/sidebar-bullet.png) no-repeat 40px 19px;
+
+}
+
+#sidebar .widget .logo_share {
+
+    margin: 0 auto;
+    width: 120px;
+
+}
+
+/* sidebar contact styling */
+
+#sidebar .dv_getstart {
+color:#FFF;
+-moz-box-shadow: 0 0 5px 5px #888;
+-webkit-box-shadow: 0 0 5px 5px#888;
+box-shadow: 0 0 5px 5px #888;
+border: 10px solid #FFF;
+margin: 0 auto;
+width: 200px;
+background: #429498;
+padding: 11px 10px 0 11px;
+}
+#sidebar .wpcf7-form .inner_getstart {
+
+}
+
+#sidebar .wpcf7-form .ttl_getstart {
+font-size: 24px;
+padding: 20px 0;
+text-align: center;
+}
+
+#sidebar .wpcf7-form input, #sidebar .wpcf7-form .cont_getstart {
+width: 150px;
+padding-left: 5px;
+margin-left: 5px;
+font-size: 14px;
+}
+
+#sidebar .wpcf7-form .cont_getstart {
+
+}
+
+/* general contact styling */
+
+.btn_start {
+
+  width: 91px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #ffc00e;
+  background: url(images/site-image/btn_submit.png) no-repeat left top;
+  border: none;
+  vertical-align: top;
+  outline: none;
+
+}
+
+.wpcf7-form .txt_startarea {
+  height: 60px;
+  padding: 8px 0 8px 8px;
+  overflow: auto;
+  margin-bottom: 0;
+  width: 150px;
+  font-size:14px;
+}
+
+.img_captcha {
+width: 90px;
+height: 29px;
+background: #e3e3e3;
+margin-top: 10px;
+vertical-align: middle;
+}
+
+.txt_sidecaptcha {
+width: 100px;
+}
+
+/* footer */
+
+#add-this-bar { padding-bottom: 30px; }
+
 #footer-area {
     border-top: none;
     box-shadow: none;
 }
 
-#footer-bottom { background-color: #595959; }
+#footer-bottom { 
+  background-color: #595959; 
+  border-top: none;
+}
+
 #footer-bottom li a { color: #FFF; }
 
-#footer-bottom-area a { color: #ff7100; }
+#footer-bottom-area a { 
+  text-decoration: underline;
+  color: #fff; 
+}
 
 #footer-bottom-area { 
 
@@ -90,6 +252,7 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 }
 
 #basic-copyright { text-align: right; }
+
 
 
 /* small general ie fixes */
@@ -110,9 +273,10 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 /* apply styling to elements under 600px in device width */
 @media screen and (max-width: 599px) {
 
+  #sidebar { display: none;}
 
   /* contact form 7 tweaks - comment out if you do not use this plugin */
-  /* styles form elements to stretch across entire space as opposed to breaking out of display area */
+  /* styles form elements to stretch across entire space as opposed to breaking out of display area
 
   .wpcf7-form-control {
     width: 100% !important;
@@ -128,11 +292,25 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 
   .wpcf7-form-control.wpcf7-captchac {
     width: 72px !important;
-    /* causes image not to stretch */
+    /* causes image not to stretch */ /*
   }
+
+   */
+
+  #add-this-bar { display: none;}
+
+
 }
 /* apply styling to elements 600px and over in device width */
 @media screen and (min-width: 600px) {
+
+  #secondary-header-info {
+
+    width: 200px;
+    float: right;
+
+  }
+
 
 
   /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container */
@@ -202,6 +380,13 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 
   #body-area { padding-top: 40px; }
 
+
+  #primary-header-info {
+
+  float: left;
+
+  }
+
   #slogan {
 
     display: block;
@@ -209,12 +394,6 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 
   }
 
-  #secondary-header-info {
-
-    width: 200px;
-    float: right;
-
-  }
 
   #primary table {
     display: table;

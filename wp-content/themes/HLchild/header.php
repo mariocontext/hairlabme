@@ -38,16 +38,19 @@
 	<div id="body-area">
 		<div class="container">
 			<header id="main-header" class="clearfix">
+
+				<div id="primary-header-info">
 				<?php $logo = ( $user_logo = et_get_option( 'foxy_logo' ) ) && '' != $user_logo ? $user_logo : $template_directory_uri . '/images/logo.png'; ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_attr( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo"/></a>
 				<p id="slogan"><?php bloginfo( 'description' ); ?></p>
+				</div><!-- primary-header-info -->
 
 				<div id="secondary-header-info">
 
 					<?php do_action('icl_language_selector'); ?>
 					<p class="contact_no">
 					<?php _e('<br />Call Today for a<br />FREE Consultation<br />', 'HLchild'); ?>
-					<span><?php echo get_site_phone() ?></span></p>
+					<span><a href="866-846-2588"><?php echo get_site_phone() ?></a></span></p>
 
 				</div><!-- secondary-header-info"-->
 

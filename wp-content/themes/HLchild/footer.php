@@ -1,3 +1,19 @@
+		<div id="add-this-bar">
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style " style="width: 580px; margin: auto; clear: both;margin-top: 30px;">
+			<a style="position: relative;" class="addthis_button_twitter_follow_native" tf:screen_name="HairlabLA"></a>
+			<a style="position: relative; margin-left: -32px;" class="addthis_button_tweet"></a> 
+			<a style="position: relative; margin-left: -31px;" class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+			<a style="position: relative; margin-left: 0px;" class="addthis_button_facebook_send"></a>
+			<a style="position: relative; margin-left: 0px;" class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+			<a style="position: relative; margin-left: -29px;" class="addthis_counter addthis_pill_style"></a>
+			</div>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-513465de1abe0367"></script>
+			<!-- AddThis Button END -->
+		</div><!-- add-this-bar -->
+		
+
 		</div> <!-- .container -->
 	</div> <!-- #body-area -->
 
