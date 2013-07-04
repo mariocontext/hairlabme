@@ -37,7 +37,15 @@ h2, h3, h4, h5, h6 {
   color: #066;
   }
 
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+
 /* header styles */
+
 
 header #slogan {
 
@@ -79,14 +87,15 @@ header .contact_no span a {
 }
 
 
-#content a, #lang_sel_footer { color: #ff7100 !important; }
+#content a, #lang_sel_footer a { color: #ff7100 !important; }
 
 /* navigation */
 
 #top-navigation a { color: #FFF !important;}
 #menu-custom_menu > li:first-child > a:first-child, #menu-custom_menu_es > li:first-child > a:first-child { padding-left: 8px; }
 #menu-custom_menu, #menu-custom_menu ul li, #menu-custom_menu_es, #menu-custom_menu_es ul li { background-color: #333;}
-.nav li ul {border: none; }
+
+.nav li ul, .nav li li { border-bottom: none; }
 
 span.menu_slide, span.main_text { padding: 14px 14px; }
 
@@ -116,6 +125,7 @@ background: url(images/splash.png) no-repeat 50% 0;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 20px;
+  color: #066;
 
 }
 
@@ -154,9 +164,9 @@ background: url(images/splash.png) no-repeat 50% 0;
 
 #sidebar .dv_getstart {
 color:#FFF;
--moz-box-shadow: 0 0 5px 5px #888;
--webkit-box-shadow: 0 0 5px 5px#888;
-box-shadow: 0 0 5px 5px #888;
+-moz-box-shadow: 0 0 5px 5px #CCC;
+-webkit-box-shadow: 0 0 5px 5px #CCC;
+box-shadow: 0 0 5px 5px #CCC;
 border: 10px solid #FFF;
 margin: 0 auto;
 width: 200px;
@@ -174,14 +184,20 @@ text-align: center;
 }
 
 #sidebar .wpcf7-form input, #sidebar .wpcf7-form .cont_getstart {
-width: 150px;
+width: 170px;
 padding-left: 5px;
-margin-left: 5px;
-font-size: 14px;
+
 }
 
-#sidebar .wpcf7-form .cont_getstart {
 
+#sidebar .wpcf7-form input { 
+  margin-left: 0px; 
+  font-size: 16px; 
+}
+
+#sidebar .wpcf7-form .cont_getstart { 
+  margin-left: 5px; 
+  font-size: 14px; 
 }
 
 /* general contact styling */
@@ -207,7 +223,7 @@ font-size: 14px;
   padding: 8px 0 8px 8px;
   overflow: auto;
   margin-bottom: 0;
-  width: 150px;
+  width: 170px;
   font-size:14px;
 }
 
@@ -221,6 +237,12 @@ vertical-align: middle;
 
 .txt_sidecaptcha {
 width: 100px;
+}
+
+.wpcf7-form input, .wpcf7-form textarea, .wpcf7-form select {
+
+font-size: 20px ;
+
 }
 
 /* footer */
