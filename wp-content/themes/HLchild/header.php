@@ -82,7 +82,7 @@
 
 						<div class="slide-container">
 
-							<!-- going to use Foxy slider in place of old legacy theme1164 -->
+							<!-- going to use Woothemes slider in place of old legacy theme1164 on homepage - see page-home template -->
 
 						</div>
 

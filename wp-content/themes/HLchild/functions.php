@@ -8,9 +8,9 @@
 
 			//wp_register_script('myhelper', $my_child_path.'/js/helper.js', array(), '1.0', true);
 
-			//wp_register_script('mystacktable', $my_child_path.'/js/stacktable.js', array('jquery'), '1.1', true);
+			wp_register_script('mystacktable', $my_child_path.'/js/stacktable.js', array('jquery'), '1.1', true);
 
-			wp_register_script('myfitvids', $my_child_path.'/js/jquery.fitvids.js', array('jquery'), '1.0', true);
+			//wp_register_script('myfitvids', $my_child_path.'/js/jquery.fitvids.js', array('jquery'), '1.0', true);
 
 			//wp_register_script('faded', $my_child_path.'/js/jquery.faded.js', array('jquery'), '0.3.2', true);
 
@@ -19,8 +19,8 @@
 
 			wp_enqueue_script('mymodernizr');
 			//wp_enqueue_script('myhelper');
-			//wp_enqueue_script('mystacktable');
-			wp_enqueue_script('myfitvids');
+			wp_enqueue_script('mystacktable');
+			//wp_enqueue_script('myfitvids');
 			//wp_enqueue_script('faded');
 			wp_enqueue_script('myscripts', 10);
 
