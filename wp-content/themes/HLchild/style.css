@@ -56,28 +56,43 @@ a {
 
 /* header styles */
 
-
 header #slogan {
 
   font-size: 14px;
   font-style: normal;
   color: #399;
   padding-top: 5px;
+  display: block;
+  clear: both;
 
 }
+
 
 header #lang_sel {
-  
-  float:right;
+  clear: both;
+}
+
+
+#lang_sel a, #lang_sel a:visited {
+
+  font-size: 18px;
+  line-height: 32px;
 
 }
+
+#lang_sel li {
+
+  width: 150px;
+
+}
+
 
 header .contact_no {
   clear:both;
   font-size: 20px;
   color: #666;
   line-height: 21px;
-  text-align: right;
+  text-align: center;
   font-weight: 400;
   background: url(images/site-image/contact_img.gif) no-repeat right 62px;
 }
@@ -321,12 +336,28 @@ color: #FFF;
 
 @media screen and (max-width: 479px) {
 
-
   /* override of Foxy */
   .post-heading h1, h1#comments, #reply-title, h1.category-title { font-size: 30px;}
 
 }
 
+@media screen and (min-width: 525px) {
+
+  #primary-header-info {
+    width: 325px;
+    margin: 0 auto;
+  }
+
+  #secondary-header-info {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #lang_sel li {
+
+  }
+
+}
 
 /* apply styling to elements under 600px in device width */
 @media screen and (max-width: 599px) {
@@ -359,14 +390,31 @@ color: #FFF;
 
 
 }
+
+
 /* apply styling to elements 600px and over in device width */
 @media screen and (min-width: 600px) {
 
-  #secondary-header-info {
 
-    width: 200px;
+  #primary-header-info {
+    float: left;
+  }
+
+  #slogan {
+
+  }
+
+  #secondary-header-info {
     float: right;
 
+  }
+
+  header #lang_sel {
+    float:right;
+  }
+
+  header .contact_no {
+    text-align: right;
   }
 
 
@@ -460,20 +508,6 @@ zoom: 1;
   #body-area { padding-top: 40px; }
 
 
-  #primary-header-info {
-
-  float: left;
-
-  }
-
-  #slogan {
-
-    display: block;
-    clear: both;
-
-  }
-
-
   #left-area table {
     display: table;
   }
@@ -495,6 +529,12 @@ zoom: 1;
     width: 49%;
     padding-left: 1%;
   }
+}
+
+@media screen and (max-width: 960px) {
+
+
+
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 961px) {
