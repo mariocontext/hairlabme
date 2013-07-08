@@ -58,8 +58,20 @@
 
 	<div id="footer-bottom-area" class="container">
 
+		<div class="small-screen-quick-jump-buttons">
+
+			<a href="http://866-846-2588" class="big-button biggreen">Call Us</a>
+			<a href="http://www.hairlab.me/sitemap/" class="big-button biggreen">Map</a>
+			<a href="http://www.hairlab.me/contact-us/" class="big-button biggreen">Contact Us</a>
+			<a href="#back-to-top" class="big-button biggreen">Back to Top</a>
+
+		</div><!-- small-screen-quick-jump-buttons -->
+
+
+
 		<p> <?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?>
-			<?php printf( __( ' HAIRLAB® and the HAIRLAB logo are part of a family of trademarks of %1$s, Inc. Trademarks and URL are licensed by Dr. Ron Chao. United Global Media Group, Inc. and its affiliates are not a professional medical corporation nor engage in the field of practicing medicine. V4', 'Foxy' ), '<a href="http://www.ugmedia.com" title="United Global Media Group">United Global Media Group, Inc.</a>'); ?></p>
+
+			  <?php _e('HAIRLAB&reg; and the HAIRLAB logo are part of a family of trademarks of United Global Media Group, Inc. Trademarks and URL are licensed by Dr. Ron Chao. United Global Media Group, Inc. and its affiliates are not a professional medical corporation nor engage in the field of practicing medicine. V4', 'HLchild'); ?></p>
 
 	</div>
 

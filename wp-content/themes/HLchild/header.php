@@ -35,7 +35,7 @@
 </head>
 <!-- using HL header -->
 <body <?php body_class(); ?>>
-	<div id="body-area">
+	<div id="body-area"><a id="back-to-top"></a>
 		<div class="container">
 			<header id="main-header" class="clearfix">
 
@@ -53,6 +53,14 @@
 					<span><a href="866-846-2588"><?php echo get_site_phone() ?></a></span></p>
 
 				</div><!-- secondary-header-info"-->
+
+				<div class="small-screen-quick-jump-buttons">
+
+					<a href="http://866-846-2588" class="big-button biggreen">Call Us</a>
+					<a href="http://www.hairlab.me/sitemap/" class="big-button biggreen">Map</a>
+					<a href="http://www.hairlab.me/contact-us/" class="big-button biggreen">Contact Us</a>
+
+				</div><!-- small-screen-quick-jump-buttons -->
 
 				<nav id="top-navigation">
 				<?php

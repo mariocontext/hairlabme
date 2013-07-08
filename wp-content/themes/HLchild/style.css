@@ -69,6 +69,7 @@ header #slogan {
 
 
 header #lang_sel {
+  display: none;
   clear: both;
 }
 
@@ -86,6 +87,11 @@ header #lang_sel {
 
 }
 
+#lang_sel_footer ul li a, #lang_sel_footer ul li a:visited {
+
+  font-size: 18px;
+
+}
 
 header .contact_no {
   clear:both;
@@ -112,7 +118,9 @@ header .contact_no span a {
 }
 
 
-#body-area #content a, html body #lang_sel_footer a { color: #ff7100 !important ; } /* override of inline css */
+#body-area #content a, 
+html body #lang_sel_footer a { 
+  color: #ff7100 !important ; } /* override of inline css */
 
 /* navigation */
 
@@ -327,6 +335,62 @@ color: #FFF;
 
 }
 
+/* table fixes using tableizer.js */
+  /* default table styling in primary page area. applies to all tables. may be too greedy and you may want to limit it by changing the css and the invoking function in scripts.js to only target a table with a specific class if there are too many conflicts with plugins that use tables in this area */
+
+  .stacktable {
+    width: 100%;
+  }
+
+
+  .st-head-row {
+    padding-top: 1em;
+  }
+
+
+  .st-head-row.st-head-row-main {
+    font-size: 1.5em;
+    padding-top: 0;
+  }
+
+
+  .st-key {
+    text-align: left;
+    padding-right: 1%;
+  }
+
+
+  .st-val {
+    padding-left: 1%;
+  }
+
+
+  .mobilized-table table {
+    display: none;
+  }
+
+
+  .mobilized-table .stacktable.small-only {
+    display: table;
+  }
+
+  .lt-ie8 #primary table {
+    display: block;
+  }
+
+/* small screen quick jump buttons */
+
+.small-screen-quick-jump-buttons a.big-button {
+font-weight: normal !important;
+font-size: 20px;
+padding: 14px 0px;
+margin: 8px 6px 8px 0;
+width: 100%;
+text-align: center;
+color:#FFF !important;
+text-decoration: none !important;
+}
+
 
 /* small general ie fixes */
 
@@ -334,12 +398,19 @@ color: #FFF;
   max-width: inherit;
 }
 
+
+
 @media screen and (max-width: 479px) {
 
   /* override of Foxy */
-  .post-heading h1, h1#comments, #reply-title, h1.category-title { font-size: 30px;}
+  .post-heading h1, 
+  h1#comments, 
+  #reply-title, 
+  h1.category-title { 
+    font-size: 30px;
+  }
 
-}
+} /* close max-width 479 */
 
 @media screen and (min-width: 525px) {
 
@@ -353,16 +424,13 @@ color: #FFF;
     margin: 0 auto;
   }
 
-  #lang_sel li {
 
-  }
-
-}
+} /* close min 525 */
 
 /* apply styling to elements under 600px in device width */
 @media screen and (max-width: 599px) {
 
-  #sidebar { display: none;}
+  
 
   /* contact form 7 tweaks - comment out if you do not use this plugin */
   /* styles form elements to stretch across entire space as opposed to breaking out of display area
@@ -377,7 +445,7 @@ color: #FFF;
     padding: 14px 0;
     padding:  1rem 0;
   }
-
+s
 
   #body-area .wpcf7-form-control.wpcf7-captchac {
     width: 72px;
@@ -386,127 +454,110 @@ color: #FFF;
 
    */
 
-  #add-this-bar { display: none; }
-
+header .other_slider {
+  
+  display: none;
 
 }
+
+
+} /* close max width 599 */
 
 
 /* apply styling to elements 600px and over in device width */
 @media screen and (min-width: 600px) {
 
 
-  #primary-header-info {
-    float: left;
+    /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container 
+    #body-area #content .fluid-width-video-wrapper {
+      width: 480px;
+      height: 320px;
+      padding-top: 0px;
+    }
+
+    */
+
+    #colophon {
+      /* adds more clickable space */
+    }
+
+    #colophon .icon-caret-up, #colophon .icon-sitemap {
+      display: none;
+    }
+
+    #colophon .general-button {
+      margin: 20px 0px;
+      margin:  1.429rem 0px;
+    }
+
+  
+
+  /* woo slider tweaks - found on homepage */
+
+  #body-area .wooslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: none;
+  position: relative;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  zoom: 1;
   }
 
-  #slogan {
-
-  }
-
-  #secondary-header-info {
-    float: right;
-
-  }
-
-  header #lang_sel {
-    float:right;
-  }
-
-  header .contact_no {
-    text-align: right;
-  }
-
-
-
-  /* defaults videos to 480 x 320 in the main content area for desktop-like environments. this can be changed or overwritten if needed to be larger or smaller or removed to scale to fill the entire parent container 
-  #body-area #content .fluid-width-video-wrapper {
-    width: 480px;
-    height: 320px;
-    padding-top: 0px;
-  }
-
-  */
-
-  #colophon {
-    /* adds more clickable space */
-  }
-
-  #colophon .icon-caret-up, #colophon .icon-sitemap {
+  .small-screen-quick-jump-buttons {
     display: none;
   }
 
-  #colophon .general-button {
-    margin: 20px 0px;
-    margin:  1.429rem 0px;
-  }
-}
 
-/* table fixes using tableizer.js */
-/* default table styling in primary page area. applies to all tables. may be too greedy and you may want to limit it by changing the css and the invoking function in scripts.js to only target a table with a specific class if there are too many conflicts with plugins that use tables in this area */
-
-.stacktable {
-  width: 100%;
-}
+} /* close min width 600 */
 
 
-.st-head-row {
-  padding-top: 1em;
-}
+/* mobile nav appears below to this point */
+@media only screen and ( max-width: 767px ) {
 
 
-.st-head-row.st-head-row-main {
-  font-size: 1.5em;
-  padding-top: 0;
-}
+    #add-this-bar { display: none; }
+
+} /* close max width 767 */
+
+@media only screen and ( min-width: 768px ) {
 
 
-.st-key {
-  text-align: left;
-  padding-right: 1%;
-}
+    #primary-header-info {
+      float: left;
+    }
+
+    header #lang_sel {
+      display: block;
+      clear: both;
+      float:right;
+    }
 
 
-.st-val {
-  padding-left: 1%;
-}
+    #secondary-header-info {
+      float: right;
+
+    }
+
+    header .contact_no {
+      text-align: right;
+    }
 
 
-.mobilized-table table {
-  display: none;
-}
-
-
-.mobilized-table .stacktable.small-only {
-  display: table;
-}
-
-.lt-ie8 #primary table {
-  display: block;
-}
-
-/* woo slider tweaks - found on homepage */
-
-#body-area .wooslider {
-margin: 0 0 60px;
-background: #fff;
-border: none;
-position: relative;
--webkit-border-radius: none;
--moz-border-radius: none;
--o-border-radius: none;
-border-radius: none;
--webkit-box-shadow: none;
--moz-box-shadow: none;
--o-box-shadow: none;
-box-shadow: none;
-zoom: 1;
-}
+} /* close min width 768 */
 
 @media screen and (min-width: 800px) {
 
   #body-area { padding-top: 40px; }
 
+
+  /* stacktable styling */
 
   #left-area table {
     display: table;
@@ -516,8 +567,6 @@ zoom: 1;
   #left-area table.stacktable.small-only {
     display: none;
   }
-
-
 
   .st-key {
     width: 49%;
@@ -529,13 +578,15 @@ zoom: 1;
     width: 49%;
     padding-left: 1%;
   }
+
+} /* close min width 800 */
+
+@media only screen and (max-width: 960px) {
+
+    #sidebar { display: none; }
+
 }
 
-@media screen and (max-width: 960px) {
-
-
-
-}
 
 @media only screen and (max-width: 1300px) and (min-width: 961px) {
 
@@ -551,4 +602,4 @@ zoom: 1;
     padding: 0px 0px 0px 25px;
   }
 
-}
+} /* close min width 961 and max width 1300 */
