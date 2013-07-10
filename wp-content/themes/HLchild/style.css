@@ -374,6 +374,7 @@ color: #FFF;
     display: table;
   }
 
+
   .lt-ie8 #primary table {
     display: block;
   }
@@ -563,10 +564,11 @@ header .other_slider {
     display: table;
   }
 
-
+  
   #left-area table.stacktable.small-only {
     display: none;
   }
+  
 
   .st-key {
     width: 49%;
