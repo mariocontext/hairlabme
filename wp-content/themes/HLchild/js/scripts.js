@@ -6,7 +6,8 @@
 	    $(".mobilized-table").stacktable({myClass:'stacktable small-only'});
 
 	       // Target your .container, .wrapper, .post, etc.
-	    //$("#left-area").fitVids();
+
+  $("#left-area").fitVids({ customSelector: "iframe[src^='https://maps.google.com']"});
 
 
 })( jQuery );

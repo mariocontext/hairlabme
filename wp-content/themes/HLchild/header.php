@@ -35,7 +35,7 @@
 </head>
 <!-- using HL header -->
 <body <?php body_class(); ?>>
-	<div id="body-area"><a id="back-to-top"></a>
+	<div id="body-area">
 		<div class="container">
 			<header id="main-header" class="clearfix">
 
@@ -50,7 +50,7 @@
 					<?php do_action('icl_language_selector'); ?>
 					<p class="contact_no">
 					<?php _e('<br />Call Today for a<br />FREE Consultation<br />', 'HLchild'); ?>
-					<span><a href="866-846-2588"><?php echo get_site_phone() ?></a></span></p>
+					<span><?php echo get_site_phone() ?></span></p>
 
 				</div><!-- secondary-header-info"-->
 
@@ -84,6 +84,7 @@
 				?>
 				</nav>
 
+
 				<?php if( is_front_page() || is_home() ) { ?>
 
 					<section id="slider">
@@ -105,6 +106,8 @@
 						</div>
 
 				<?php } ?>
+
+				<a id="back-to-top"></a>
 
 				<?php do_action( 'et_header_top' ); ?>
 			</header> <!-- #main-header -->

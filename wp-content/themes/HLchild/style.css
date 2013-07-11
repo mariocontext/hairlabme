@@ -150,6 +150,12 @@ html body #lang_sel_footer a {
 
 span.menu_slide, span.main_text { padding: 14px 14px; }
 
+.slide-container > img {
+
+  width: 100%;
+
+}
+
 /* content */
 
 #body-area {
@@ -160,6 +166,12 @@ background: url(images/splash.png) no-repeat 50% 0;
 
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+
+}
+
+#left-area img {
+
+  margin: 10px 0px;
 
 }
 
@@ -258,7 +270,7 @@ padding-left: 5px;
   width: 91px;
   height: 35px;
   padding: 0;
-  margin: 0;
+  margin: 20px 0px;
   cursor: pointer;
   font: bold 12px Arial, Helvetica, sans-serif;
   color: #ffc00e;
@@ -290,11 +302,54 @@ vertical-align: middle;
 width: 100px;
 }
 
+#left-area .txt_captcha {
+
+  width: 120px;
+
+}
+
 .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form select {
 
 font-size: 20px ;
 
 }
+
+#sidebar div.wpcf7-response-output {
+
+    font-size: 14px;
+    padding: 40px 0px;
+    display: block;
+}
+
+#sidebar span.wpcf7-not-valid-tip {
+
+    font-size: 14px;
+    padding: 0px 0px 20px;
+    display: block;
+
+}
+
+#left-area div.wpcf7-response-output {
+
+    font-size: 14px;
+    padding: 40px 0px;
+    display: block;
+    clear:both;
+    float: left;
+}
+
+#left-area span.wpcf7-not-valid-tip {
+
+    font-size: 14px;
+    padding: 0px 0px 20px;
+    display: block;
+    clear: both;
+
+}
+
+
+
+
 
 /* footer */
 
@@ -381,6 +436,12 @@ color: #FFF;
 
 /* small screen quick jump buttons */
 
+.small-screen-quick-jump-buttons {
+
+  clear: both;
+
+}
+
 .small-screen-quick-jump-buttons a.big-button {
 font-weight: normal !important;
 font-size: 20px;
@@ -392,6 +453,12 @@ color:#FFF !important;
 text-decoration: none !important;
 }
 
+
+.page-id-57 .fluid-width-video-wrapper {
+
+      clear: both; /* clears map from blocking contact form validation errors */
+
+  }
 
 /* small general ie fixes */
 
@@ -431,29 +498,9 @@ text-decoration: none !important;
 /* apply styling to elements under 600px in device width */
 @media screen and (max-width: 599px) {
 
-  
 
-  /* contact form 7 tweaks - comment out if you do not use this plugin */
-  /* styles form elements to stretch across entire space as opposed to breaking out of display area
 
-  #body-area .wpcf7-form-control {
-    width: 100%;
-  }
-
-  #body-area .wpcf7-form-control.wpcf7-submit {
-    font-size: 18px;
-    font-size: 1.286rem;
-    padding: 14px 0;
-    padding:  1rem 0;
-  }
-s
-
-  #body-area .wpcf7-form-control.wpcf7-captchac {
-    width: 72px;
-    /* causes image not to stretch */ /*
-  }
-
-   */
+/* 
 
 header .other_slider {
   
@@ -461,6 +508,7 @@ header .other_slider {
 
 }
 
+*/
 
 } /* close max width 599 */
 
@@ -522,12 +570,46 @@ header .other_slider {
 /* mobile nav appears below to this point */
 @media only screen and ( max-width: 767px ) {
 
+    /* contact form 7 tweaks - comment out if you do not use this plugin */
+  /* styles form elements to stretch across entire space as opposed to breaking out of display area */
 
-    #add-this-bar { display: none; }
+  #body-area .wpcf7-form-control {
+
+    width: 100%;
+
+  }
+
+  .wpcf7-form input, .wpcf7-form textarea, .wpcf7-form select {
+      width: 100%;
+
+  }
+
+  #body-area .wpcf7-form-control.wpcf7-submit {
+    font-size: 18px;
+    /* font-size: 1.286rem; */
+    padding: 14px 20px;
+    /* padding:  1rem 0; */
+  }
+
+
+  #body-area .wpcf7-form-control.wpcf7-captchac {
+    width: 72px;
+    /* causes image not to stretch */ 
+  }
+
+
+
+  #add-this-bar { display: none; }
 
 } /* close max width 767 */
 
 @media only screen and ( min-width: 768px ) {
+
+      #left-area img {
+
+      margin: auto;
+
+    }
 
 
     #primary-header-info {
@@ -550,6 +632,12 @@ header .other_slider {
       text-align: right;
     }
 
+  .fluid-width-video-wrapper iframe[src^='https://maps.google.com'] {
+
+      width: 500px;
+      clear: both;
+
+  }
 
 } /* close min width 768 */
 
@@ -590,7 +678,7 @@ header .other_slider {
 }
 
 
-@media only screen and (max-width: 1300px) and (min-width: 961px) {
+@media only screen and (min-width: 961px) {
 
   #main-header {
     padding: 40px 30px;

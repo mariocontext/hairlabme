@@ -15,18 +15,18 @@
 			//wp_register_script('faded', $my_child_path.'/js/jquery.faded.js', array('jquery'), '0.3.2', true);
 
 
-			wp_register_script('myscripts', $my_child_path.'/js/scripts.js', array('jquery'), '1.2', true);
+			wp_register_script('myscripts', $my_child_path.'/js/scripts.js', array('jquery'), '1.21', true);
 
 			wp_enqueue_script('mymodernizr');
 			//wp_enqueue_script('myhelper');
 			wp_enqueue_script('mystacktable');
 			//wp_enqueue_script('myfitvids');
 			//wp_enqueue_script('faded');
-			wp_enqueue_script('myscripts', 10);
+			wp_enqueue_script('myscripts', $my_child_path.'/js/scripts.js', array('fitvids'), '1.21', true);
 
 		}
 
-add_action('wp_enqueue_scripts', 'load_my_scripts');
+add_action('wp_enqueue_scripts', 'load_my_scripts', 11); /* 11 loads scripts after main theme files which are at 10 */
 
 /* Slider from theme1164 */
 
