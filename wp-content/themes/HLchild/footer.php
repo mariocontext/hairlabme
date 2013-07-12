@@ -60,7 +60,7 @@
 
 		<div class="small-screen-quick-jump-buttons">
 
-			<a href="http://866-846-2588" class="big-button biggreen">Call Us</a>
+			<a href="tel:+1866-846-2588" class="big-button biggreen">Call Us</a>
 			<a href="http://www.hairlab.me/sitemap/" class="big-button biggreen">Map</a>
 			<a href="http://www.hairlab.me/contact-us/" class="big-button biggreen">Contact Us</a>
 			<a href="#back-to-top" class="big-button biggreen">Back to Top</a>

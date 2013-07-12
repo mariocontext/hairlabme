@@ -150,7 +150,7 @@ html body #lang_sel_footer a {
 
 span.menu_slide, span.main_text { padding: 14px 14px; }
 
-.slide-container > img {
+.slide-container img {
 
   width: 100%;
 
@@ -212,6 +212,7 @@ background: url(images/splash.png) no-repeat 50% 0;
 
 #sidebar .widget ul li:hover {
 
+    padding-left: 62px !important;
     background: url(images/sidebar-bullet.png) no-repeat 40px 19px;
 
 }
@@ -482,15 +483,6 @@ text-decoration: none !important;
 
 @media screen and (min-width: 525px) {
 
-  #primary-header-info {
-    width: 325px;
-    margin: 0 auto;
-  }
-
-  #secondary-header-info {
-    width: 200px;
-    margin: 0 auto;
-  }
 
 
 } /* close min 525 */
@@ -526,6 +518,17 @@ header .other_slider {
 
     */
 
+  #primary-header-info {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  #secondary-header-info {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+
     #colophon {
       /* adds more clickable space */
     }
@@ -559,6 +562,7 @@ header .other_slider {
   zoom: 1;
   }
 
+
   .small-screen-quick-jump-buttons {
     display: none;
   }
@@ -573,6 +577,12 @@ header .other_slider {
     /* contact form 7 tweaks - comment out if you do not use this plugin */
   /* styles form elements to stretch across entire space as opposed to breaking out of display area */
 
+  .sf-sub-indicator {
+      
+      display: none;
+
+  }
+  
   #body-area .wpcf7-form-control {
 
     width: 100%;
@@ -605,9 +615,9 @@ header .other_slider {
 
 @media only screen and ( min-width: 768px ) {
 
-      #left-area img {
+    #left-area img {
 
-      margin: auto;
+      margin: 10px 20px;
 
     }
 
@@ -622,6 +632,12 @@ header .other_slider {
       float:right;
     }
 
+    #lang_sel ul ul {
+
+      top: 35px;
+
+    }
+
 
     #secondary-header-info {
       float: right;
@@ -630,6 +646,12 @@ header .other_slider {
 
     header .contact_no {
       text-align: right;
+    }
+
+    #body-area .wooslider {
+
+    margin: 0px 20px 60px 20px;
+
     }
 
   .fluid-width-video-wrapper iframe[src^='https://maps.google.com'] {
@@ -691,5 +713,6 @@ header .other_slider {
   #menu-custom_menu {
     padding: 0px 0px 0px 25px;
   }
+
 
 } /* close min width 961 and max width 1300 */

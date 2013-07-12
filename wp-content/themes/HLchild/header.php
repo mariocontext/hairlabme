@@ -13,6 +13,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+
 	<title><?php elegant_titles(); ?></title>
 	<?php elegant_description(); ?>
 	<?php elegant_keywords(); ?>
@@ -32,6 +33,8 @@
 	</script>
 
 	<?php wp_head(); ?>
+
+
 </head>
 <!-- using HL header -->
 <body <?php body_class(); ?>>
@@ -56,7 +59,7 @@
 
 				<div class="small-screen-quick-jump-buttons">
 
-					<a href="http://866-846-2588" class="big-button biggreen">Call Us</a>
+					<a href="tel:+1866-846-2588" class="big-button biggreen">Call Us</a>
 					<a href="http://www.hairlab.me/sitemap/" class="big-button biggreen">Map</a>
 					<a href="http://www.hairlab.me/contact-us/" class="big-button biggreen">Contact Us</a>
 
