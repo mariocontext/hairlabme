@@ -156,6 +156,12 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 
 }
 
+#breadcrumbs {
+
+  line-height: 1.5em;
+
+}
+
 /* content */
 
 #body-area {
@@ -479,6 +485,12 @@ text-decoration: none !important;
     font-size: 30px;
   }
 
+  .wooslider, header .other_slider {
+
+    display:none;
+
+  }
+
 } /* close max-width 479 */
 
 @media screen and (min-width: 525px) {
@@ -577,6 +589,7 @@ header .other_slider {
     /* contact form 7 tweaks - comment out if you do not use this plugin */
   /* styles form elements to stretch across entire space as opposed to breaking out of display area */
 
+  /* removes extraneous arrow in mobile nav */
   .sf-sub-indicator {
       
       display: none;
