@@ -13,6 +13,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1" />
 
 	<title><?php elegant_titles(); ?></title>
 	<?php elegant_description(); ?>
@@ -60,7 +61,7 @@
 				<div class="small-screen-quick-jump-buttons">
 
 					<a href="tel:+1866-846-2588" class="big-button biggreen">Call Us</a>
-					<a href="http://www.hairlab.me/sitemap/" class="big-button biggreen">Map</a>
+					<a href="http://www.hairlab.me/location/" class="big-button biggreen">Map</a>
 					<a href="http://www.hairlab.me/contact-us/" class="big-button biggreen">Contact Us</a>
 
 				</div><!-- small-screen-quick-jump-buttons -->

@@ -152,7 +152,7 @@ span.menu_slide, span.main_text { padding: 14px 14px; }
 
 .slide-container img {
 
-  width: 100%;
+  width: 100% !important; /* important is for IE 8 */
 
 }
 
@@ -179,6 +179,22 @@ background: url(images/splash.png) no-repeat 50% 0;
 
   margin: 10px 0px;
 
+}
+
+#left-area h1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: -4px;
+}
+
+#left-area h2, #left-area h3 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.page .post-heading h1 {
+  display: none;
 }
 
 /* sidebar */
@@ -271,6 +287,10 @@ padding-left: 5px;
 }
 
 /* general contact styling */
+
+#sidebar .btn_start {
+  color: #429498;
+}
 
 .btn_start {
 
@@ -485,15 +505,17 @@ text-decoration: none !important;
     font-size: 30px;
   }
 
-  .wooslider, header .other_slider {
+  .wp-image-580 {
 
     display:none;
 
   }
 
+
 } /* close max-width 479 */
 
 @media screen and (min-width: 525px) {
+
 
 
 
@@ -502,6 +524,11 @@ text-decoration: none !important;
 /* apply styling to elements under 600px in device width */
 @media screen and (max-width: 599px) {
 
+  .wooslider-direction-nav {
+    
+    display:none;
+
+  }
 
 
 /* 
@@ -674,6 +701,10 @@ header .other_slider {
 
   }
 
+    h1 {
+    font-size: 60px;
+    }
+
 } /* close min width 768 */
 
 @media screen and (min-width: 800px) {
@@ -723,9 +754,26 @@ header .other_slider {
     width: 100%;
   }
 
+/*
   #menu-custom_menu {
     padding: 0px 0px 0px 25px;
   }
+  */
 
 
-} /* close min width 961 and max width 1300 */
+  #menu-custom_menu {
+  margin:0;
+  padding:0;
+  text-align:center;
+  }
+  #menu-custom_menu > li {
+  display:inline-block;
+  text-align: left;
+  }
+  #menu-custom_menu > a {
+  display:inline-block;
+  padding:10px;
+  }
+
+
+} /* close min width 961 and old max width 1300 */

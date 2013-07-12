@@ -39,7 +39,7 @@ if ( ! function_exists( 'et_setup_theme' ) ){
 
 		add_action( 'wp_enqueue_scripts', 'et_foxy_load_scripts_styles' );
 
-		add_action( 'wp_head', 'et_add_viewport_meta' );
+		//add_action( 'wp_head', 'et_add_viewport_meta' );
 
 		add_action( 'pre_get_posts', 'et_home_posts_query' );
 
