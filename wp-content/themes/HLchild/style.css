@@ -512,6 +512,12 @@ text-decoration: none !important;
 
   }
 
+  header .other_slider, #wooslider-id-1 {
+  
+  display: none;
+
+  }
+
 
 } /* close max-width 479 */
 
@@ -531,16 +537,6 @@ text-decoration: none !important;
 
   }
 
-
-/* 
-
-header .other_slider {
-  
-  display: none;
-
-}
-
-*/
 
 } /* close max width 599 */
 
